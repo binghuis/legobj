@@ -1,0 +1,29 @@
+{
+  "name": "legobj",
+  "version": "0.0.1",
+  "description": "Handling objects like LEGO bricks.",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development tsup",
+    "build": "NODE_ENV=production tsup"
+  },
+  "keywords": [],
+  "author": "@binghuis（https://github.com/binghuis）",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
+}
